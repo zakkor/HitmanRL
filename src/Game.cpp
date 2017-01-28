@@ -5,7 +5,7 @@ Game::Game()
     fpsVar = 0;
     window.create(sf::VideoMode(1280, 720), "HitmanRL", sf::Style::Default);
 
-    mMusicPlayer.play(Music::SQUAD);
+    //    mMusicPlayer.play(Music::SQUAD);
 }
 
 void Game::run()

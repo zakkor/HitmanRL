@@ -23,7 +23,7 @@ public:
     //this would ONLY be needed for the movement actions
     DIRECTION::DIRECTION dir;
     //and this would ONLY be needed for the pickup actions
-//    Item& itemToPickup;
+    //    Item& itemToPickup;
 };
 
 

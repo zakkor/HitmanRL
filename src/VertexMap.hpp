@@ -22,7 +22,7 @@ public:
     virtual void draw(sf::RenderTarget& target, sf::RenderStates states) const;
 
     sf::Texture tileSet_copy;
-    std::vector< std::vector<Textures::ID> > tiles;
+    std::vector< std::vector<TextureId> > tiles;
     sf::VertexArray vertexArray;
 };
 

@@ -17,7 +17,7 @@ void Entity::assignTexture(ResourceHandler<sf::Texture, TileSets::ID> &tileSets)
     int textureXpos = 0;
     int textureYpos = 0;
 
-    for (int i = textureNumber - 1; i >= 0; i--)
+    for (int i = static_cast<int>(textureNumber) - 1; i >= 0; i--)
     {
         textureXpos += 64;
         if (textureXpos >= 1024)

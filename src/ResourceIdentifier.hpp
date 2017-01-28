@@ -10,28 +10,25 @@ namespace sf
 	class SoundBuffer;
 }
 
-namespace Textures
+enum class TextureId
 {
-    enum ID : unsigned int
-    {
-        GRASS = 0,
-        MUD,
-        WALL,
-        PLAYER,
-        NPC,
-        STONEFLOOR,
-        EMPTY,
-        DOOR,
-        SHADOW,
-        TERRAIN_ENUM_SIZE
-    };
-}
+  GRASS = 0,
+    MUD,
+    WALL,
+    PLAYER,
+    NPC,
+    STONEFLOOR,
+    EMPTY,
+    DOOR,
+    SHADOW,
+    TERRAIN_ENUM_SIZE
+};
 
 namespace SoundEffect
 {
     enum ID
     {
-        NICE_MEME = 0
+        Harpsi = 0
     };
 }
 
@@ -65,7 +62,7 @@ namespace Fonts
 template <typename Resource, typename Identifier>
 class ResourceHandler;
 
-typedef ResourceHandler<sf::Texture, Textures::ID>			TextureHolder;
+typedef ResourceHandler<sf::Texture, TextureId>			TextureHolder;
 typedef ResourceHandler<sf::Font, Fonts::ID>					FontHolder;
 //typedef ResourceHandler<sf::Shader, Shaders::ID>				ShaderHolder;
 typedef ResourceHandler<sf::SoundBuffer, SoundEffect::ID>	SoundBufferHolder;

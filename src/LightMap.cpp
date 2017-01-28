@@ -23,7 +23,7 @@ bool LightMap::reload()
         for (unsigned int j = 0; j < MAP_SIZE_Y; ++j)
         {
             // tile number will be Textures::SHADOW
-            int tileNumber = Textures::ID::SHADOW;
+          int tileNumber = static_cast<int>(TextureId::SHADOW);
 
             // find its position in the tileset texture
             int tu = tileNumber % (tileSet_copy.getSize().x / tileSize.x);

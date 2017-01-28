@@ -16,7 +16,7 @@ class Npc : public Actor
 {
 public:
     Npc(ResourceHandler<sf::Texture, TileSets::ID> &tileSets, Console &console);
-    Npc(Textures::ID textureNumber, ResourceHandler<sf::Texture, TileSets::ID> &tileSets, Console &console);
+    Npc(TextureId textureNumber, ResourceHandler<sf::Texture, TileSets::ID> &tileSets, Console &console);
     void addAction(Action action);
 //    void addMoveAction(MoveAction moveAction);
 //    void addPickupAction(PickupAction pickupAction);

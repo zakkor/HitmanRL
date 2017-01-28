@@ -19,7 +19,7 @@ SoundPlayer::SoundPlayer()
 : mSoundBuffers()
 , mSounds()
 {
-	mSoundBuffers.load(SoundEffect::NICE_MEME,	"res/sounds/meme.wav");
+	mSoundBuffers.load(SoundEffect::Harpsi,	"res/sounds/harpsi.wav");
 
 	// Listener points towards the screen (default in SFML)
 	sf::Listener::setDirection(0.f, 0.f, -1.f);

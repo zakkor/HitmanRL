@@ -11,6 +11,9 @@ Names::Names()
 void Names::loadFromFile(std::string file, std::string type)
 {
     std::ifstream fileStream(file.c_str());
+    if (!fileStream.is_open()) {
+            std::cout<<"error loading names!!!\n";
+    }
 
     std::string auxStr;
 
@@ -46,12 +49,12 @@ void Names::loadFromFile(std::string file, std::string type)
 void Names::loadAllNames()
 {
     std::cout << "Started loading names...";
-    loadFromFile("res/names/FEMALE FIRST.name", "female name");
-    loadFromFile("res/names/MALE FIRST.name", "male name");
-    loadFromFile("res/names/LAST NAME.name", "last name");
-    loadFromFile("res/names/FEMALE FIRST.freq", "female freq");
-    loadFromFile("res/names/MALE FIRST.freq", "male freq");
-    loadFromFile("res/names/LAST NAME.freq", "last freq");
+    loadFromFile("res/names/fem_f_n", "female name");
+    loadFromFile("res/names/male_f_n", "male name");
+    loadFromFile("res/names/last_n", "last name");
+    loadFromFile("res/names/fem_f_f", "female freq");
+    loadFromFile("res/names/male_f_f", "male freq");
+    loadFromFile("res/names/last_f", "last freq");
     std::cout << "done.\n";
 }
 

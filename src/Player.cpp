@@ -6,7 +6,7 @@ Player::Player(ResourceHandler<sf::Texture, TileSets::ID> &tileSets)
 //    inventory = Container(Textures::ID::MUD, false, "backpack",
 //                         ITEM_CATEGORY::CONTAINER, 20, 15);
     backpackSlotOccupied = false;
-    textureNumber = Textures::PLAYER;
+    textureNumber = TextureId::PLAYER;
     assignTexture(tileSets);
 //    isSolid = true;
     volume = 70000;

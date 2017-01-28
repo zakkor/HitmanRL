@@ -2,11 +2,11 @@
 
 Npc::Npc(ResourceHandler<sf::Texture, TileSets::ID> &tileSets, Console &console)
 {
-    textureNumber = Textures::NPC;
+    textureNumber = TextureId::NPC;
     assignTexture(tileSets);
 }
 
-Npc::Npc(Textures::ID textureNumber, ResourceHandler<sf::Texture, TileSets::ID> &tileSets, Console &console)
+Npc::Npc(TextureId textureNumber, ResourceHandler<sf::Texture, TileSets::ID> &tileSets, Console &console)
 {
     this->textureNumber = textureNumber;
     assignTexture(tileSets);

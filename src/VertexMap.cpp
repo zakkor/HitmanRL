@@ -3,7 +3,7 @@
 VertexMap::VertexMap(ResourceHandler<sf::Texture, TileSets::ID> &tileSets)
 {
     tileSet_copy = tileSets.get(TileSets::DEFAULT);
-    tiles.resize(100, std::vector<Textures::ID> (100, Textures::ID::GRASS));
+    tiles.resize(100, std::vector<TextureId> (100, TextureId::GRASS));
 
 
 
@@ -38,9 +38,9 @@ bool VertexMap::reload()
         for (unsigned int j = 0; j < MAP_SIZE_Y; ++j)
         {
             // get the current tile number
-            int tileNumber = tiles.at(i).at(j);
+          int tileNumber = static_cast<int>(tiles.at(i).at(j));
 
-            if (tiles.at(i).at(j) == Textures::ID::EMPTY)
+            if (tiles.at(i).at(j) == TextureId::EMPTY)
                 continue;
 
             // find its position in the tileset texture

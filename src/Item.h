@@ -17,7 +17,7 @@ enum CONTAINER_TYPE
 class Item : public Entity
 {
 public:
-    Item(Textures::ID textureNumber, ResourceHandler<sf::Texture, TileSets::ID> &tileSets);
+    Item(TextureId textureNumber, ResourceHandler<sf::Texture, TileSets::ID> &tileSets);
 
     /* Weapon related stuff */
     bool isWeapon;

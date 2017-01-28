@@ -5,7 +5,7 @@
 #include "Item.h"
 
 
-Item::Item(Textures::ID textureNumber, ResourceHandler<sf::Texture, TileSets::ID> &tileSets)
+Item::Item(TextureId textureNumber, ResourceHandler<sf::Texture, TileSets::ID> &tileSets)
 {
     // TODO: refactor
     this->isSolid = false;

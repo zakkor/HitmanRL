@@ -10,6 +10,6 @@ NpcHandler::NpcHandler()
 
 void NpcHandler::addNpc(ResourceHandler<sf::Texture, TileSets::ID> &tileSets, Console &console)
 {
-    Npc newNpc = Npc(Textures::NPC, tileSets, console);
+    Npc newNpc = Npc(TextureId::NPC, tileSets, console);
     npcList.push_back(newNpc);
 }
